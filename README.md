@@ -4,5 +4,8 @@ This is my Tetris project that I've made entirely in Java. If you would like a v
 3. Open the folder where you downloaded the zip (typically your downloads folder)
 4. Right click on the zip
 5. Click extract here
-6. Open the folder
+6. Open the folder 
 7. Go to "out" --> "artifacts" --> "Tetris_jar" --> Tetris (double click)
+Some Screenshots: 
+![](screenshots/Tetris.JPG) 
+![](screenshots/Tetris2.JPG) 
