@@ -179,10 +179,6 @@ public class GameManager {
             int num = board.holdNum;
             board.holdNum = board.currentPiece;
             board.currentPiece = num;
-
-
-
-
         } else {
             int[][] cords = board.instance.detrminePiece(board.currentPiece);
             board.holdPiece.set(0, board.instance.getObj(board.currentPiece, cords));

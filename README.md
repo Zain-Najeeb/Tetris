@@ -6,5 +6,3 @@ This is my Tetris project that I've made entirely in Java. If you would like a v
 5. Click extract here
 6. Open the folder
 7. Go to "out" --> "artifacts" --> "Tetris_jar" --> Tetris (double click)
-  
-

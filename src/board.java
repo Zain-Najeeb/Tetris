@@ -1,12 +1,12 @@
-import processing.core.PApplet;
+    import processing.core.PApplet;
 import java.util.ArrayList;
 public class board extends PApplet  {
     public static board instance;
-    public static ArrayList<blocks> pieces = new ArrayList<blocks>();
+    public static ArrayList<blocks> pieces = new ArrayList<>();
     public static boolean hasPiecebeenchosen = false;
     public static int currentPiece;
     public static int holdNum;
-    public static ArrayList<blocks> holdPiece = new ArrayList<blocks>();
+    public static ArrayList<blocks> holdPiece = new ArrayList<>();
     int timer = 0;
     public static ArrayList<Integer> blocks = new ArrayList<>();
 
@@ -53,8 +53,8 @@ public class board extends PApplet  {
 
       }
     }
-    public static void showNextPieces() {
-        ArrayList<blocks> nextPieces = new ArrayList<blocks>();
+    public void showNextPieces() {
+        ArrayList<blocks> nextPieces = new ArrayList<>();
 
         for (int i = 0; i < 5; i++) {
             int[][] cords = instance.detrminePieceNext(blocks.get(i));
@@ -71,8 +71,8 @@ public class board extends PApplet  {
             for (int i = 0; i < 4; i++) {
                 hold.getCords()[0][i] -= 275;
                 hold.getCords()[1][i] += 50;
-                instance.fill(num[0], num[1], num[2]);
-                instance.rect(hold.getCords()[0][i] , hold.getCords()[1][i] , 25, 25);
+                                    instance.fill(num[0], num[1], num[2]);
+                                    instance.rect(hold.getCords()[0][i] , hold.getCords()[1][i] , 25, 25);
             }
         }
         for (int i =0; i< 4; i++) {
@@ -130,7 +130,7 @@ public class board extends PApplet  {
 
         return b;
     }
-    public static void drawBoard() {
+    public  void drawBoard() {
         for (int ii = 0; ii < 18; ii++) {
 
             for (int i = 0; i < 10; i++) {
@@ -147,7 +147,7 @@ public class board extends PApplet  {
     }
 
     public void drawPieces(ArrayList<blocks> pieces) {
-        board.drawBoard();
+        board.instance.drawBoard();
         int[] num;
         for (blocks piece : pieces) {
             num  = piece.getColour();
